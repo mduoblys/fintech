@@ -11,12 +11,6 @@
         android:layout_height="wrap_content"
         android:text="Show text" />
 
-    <Button
-        android:id="@+id/change_colour_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Change colour" />
-
     <TextView
         android:id="@+id/appearing_text"
         android:layout_width="match_parent"

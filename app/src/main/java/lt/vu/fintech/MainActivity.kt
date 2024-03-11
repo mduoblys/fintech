@@ -1,6 +1,5 @@
 package lt.vu.fintech
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -30,7 +29,6 @@ class MainActivity : ComponentActivity() {
     {
         setContentView(R.layout.mainlayout)
         prepareTextButton()
-        prepareColourButton()
     }
 
     fun prepareTextButton()
@@ -39,15 +37,6 @@ class MainActivity : ComponentActivity() {
             .setOnClickListener {
                 val textView = findViewById<View>(R.id.appearing_text) as TextView
                 textView.text = "Text appeared"
-            }
-    }
-
-    fun prepareColourButton()
-    {
-        findViewById<Button>(R.id.change_colour_button)
-            .setOnClickListener {
-                val textView = findViewById<View>(R.id.appearing_text) as TextView
-                textView.setTextColor(Color.RED)
             }
     }
 }
